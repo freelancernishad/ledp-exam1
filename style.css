@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: arial;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* MainMenu */
+header.header {
+    background: tomato;
+}
+ul.MainMenu.MainMenuflexItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.MainMenuflexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+h1.Logo {
+    color: white;
+    font-size: 33px;
+}
+
+li.MainMenuList {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+}
+li.MainMenuList:hover {
+    background: #d83a1e;
+}
+li.SubMenuList:hover {
+    background: #d83a1e;
+}
+li.MainMenuList a {
+    padding: 12px;
+    display: block;
+    font-size: 18px;
+    color: white;
+}
+h1.Logo {
+    padding: 3px;
+}
+ul.SubMenu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: -1 !important;
+    background: tomato;
+    width: 250px;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+li.MainMenuList:hover .SubMenu {
+    opacity: 1;
+    z-index: 99 !important;
+    top: 45px;
+}
+li.SubMenuList {
+    border-bottom: 1px solid red;
+}
+
+/* MainMenu */
+
+/* Slider style */
+
+h6.sliderFirstTitle {
+    color: #ffd322;
+    font-size: 17px;
+    text-align: center;
+}
+h2.sliderSecoundTitle {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+p.text-white.animate__animated.animate__fadeInRightBig {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+i.fas.fa-chevron-left {
+    color: #292626;
+    font-size: 39px;
+}
+
+i.fas.fa-chevron-right {
+    color: #292626;
+    font-size: 39px;
+}
+
+.camera_commands {
+    display: none;
+}
+h2.animated.fadeInDown {
+    color: orange;
+}
+
+h2.animated.fadeInDown span {
+    color: tomato;
+}
+
+p.animated.fadeInUp {
+    color: white;
+    font-size: 17px;
+    width: 90%;
+    text-align: justify;
+}
+a.sliderBtn {
+    padding: 6px 37px 9px 37px !important;
+    margin: 10px !important;
+    font-size: 30px !important;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    font-weight: 600 !important;
+}
+a.sliderBtn.About {
+    background: #6f9b63;
+}
+a.sliderBtn.Portfolio {
+    background: #e96c57;
+}
+a.sliderBtn:hover {
+    background: #4b5056;
+}
+img.sliderOverImage {
+    display: none;
+}
+.cameraContent.cameracurrent {
+    background: #00000073;
+}
+@media only screen and (min-width: 960px) {
+    img.sliderOverImage {
+        display: block;
+    }
+    .sliderflexContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    img.sliderOverImage {
+        width: 465px;
+        margin-top: 52px;
+    }
+}
+
+/* Slider Style */
+/* Service section Style */
+
+h3.Title {
+    padding: 5px 0px;
+    font-size: 27px;
+    border-bottom: 1px solid #7a6c48;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.serviceSection {
+    padding: 27px 0px;
+}
+.serviceFlexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.serviceFlexItem {
+    padding: 11px;
+    text-align: center;
+    background: white;
+    margin: 5px;
+    -webkit-box-shadow: 0px 0px 11px #0000002b;
+    box-shadow: 0px 0px 11px #0000002b;
+    width: 28%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+}
+.serviceIcon i {
+    font-size: 49px;
+    margin: 16px 0;
+    border: 1px solid #0000005c;
+    width: 2em;
+    height: 2em;
+    border-radius: 50px;
+    line-height: 93px;
+    background: tomato;
+    color: white;
+}
+.servicetitle {
+    font-size: 21px;
+    margin-bottom: 11px;
+}
+.servicedescription {
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+/* Service section Style */
+
+/* Information Style */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+.readMoreBtn {
+    background: tomato;
+    padding: 6px;
+    border-radius: 6px;
+    color: white;
+}
+
+/* Information Style */
+
+input {
+    width: 100%;
+    margin: 9px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.inputFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.inputItem {
+    width: 45%;
+}
+input[type="submit"] {
+    background: tomato;
+    color: white;
+    font-size: 20px;
+}
+
+li.tagList {
+    padding: 10px;
+    border: 1px solid tomato;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: tomato;
+}
+
+/* Footer */
+.footerfontColor {
+    color: #ffffffad;
+}
+.footerWigetaddress ul {
+    list-style: none;
+}
+footer.footer.mt-7 {
+    background: #333333;
+}
+.footerWigetaddress ul li {
+    color: #ffffff52;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 3px 0px;
+}
+h2.footerfontColor {
+    border-bottom: 1px solid #7d7070;
+    display: table;
+    line-height: 56px;
+}
+h2.footerfontColor {
+    border-bottom: 1px solid #7d7070;
+    display: table;
+    line-height: 56px;
+    position: relative;
+    font-size: 22px;
+}
+
+h2.footerfontColor:after {
+    content: "";
+    background: #9a0000;
+    bottom: -1px;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    position: absolute;
+}
+.flexFooterwigetItem {
+    padding: 22px 17px;
+}
+.copywriteFlexItem ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style: none;
+    width: 194px;
+    margin: auto;
+}
+.copywriteFlexItem span {
+    color: #bdbdbd;
+    margin-top: 9px;
+}
+.copywriteFlexItem ul li {
+    border: 1px solid #333333;
+    /* flex: 1 0 auto; */
+    text-align: center;
+    padding: 0;
+    margin: 2px;
+    background: #2d2929;
+}
+
+.copywriteFlexItem ul li a {
+    display: block;
+    border: 0.125rem solid #222;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #504b4b;
+    outline: 0 solid;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.212rem;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    -webkit-box-shadow: 0 0.25em 0.25em rgb(0 0 0 / 30%);
+    box-shadow: 0 0.25em 0.25em rgb(0 0 0 / 30%);
+    line-height: 1.77rem;
+    color: #eee;
+}
+.copywriteFlexItem ul li a:hover {
+    border-color: #fff;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-box-shadow: 0 0.5em 0.5em rgb(0 0 0 / 40%);
+    box-shadow: 0 0.5em 0.5em rgb(0 0 0 / 40%);
+    outline: 0 solid;
+    -webkit-animation: pressed-social 0.3s ease-out;
+    animation: pressed-social 0.3s ease-out;
+    color: #fff;
+}
+.footerWigetaddress ul li a {
+    color: #ffffff91;
+}
+.copywriteFlexItem {
+    text-align: center;
+}
+.copywritesection {
+    background: #292727;
+    padding: 26px 0;
+}
+.develop.copywriteFlexItem {
+    margin: auto;
+    padding: 10px;
+    font-size: 19px;
+}
+.square1_dots {
+    z-index: 1 !important;
+}
+.footerWigetaddress ul li strong {
+    font-size: 18px;
+}
+.footerWigetaddress ul li a:hover {
+    text-decoration: none;
+    color: tomato;
+}
+input.email:focus {
+    outline: none;
+    border: 1px solid tomato;
+    padding: 5px;
+}
+
+input.email {
+    padding: 6px;
+    border-radius: 4px 0px 0px 4px;
+    border: 0;
+}
+input.submit {
+    padding: 5px;
+    border: 1px solid #ff634700;
+    background: tomato;
+    color: white;
+    font-weight: 600;
+    border-radius: 0px 4px 4px 0px;
+}
+input.submit:focus {
+    outline: none;
+}
+@media only screen and (min-width: 960px) {
+    .flexFooterwigetContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .copywriteFlexContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .flexFooterwigetItem {
+        padding: 22px 17px;
+        width: 33%;
+    }
+}
